@@ -1,0 +1,2206 @@
+{
+    "version": "20250623.14",
+    "include": [
+        "relative://vsd-data/components-specification.json"
+    ],
+    "metadata": {
+        "editableTypes": true,
+        "styles": {
+            "__edited": {
+                "pill": {
+                    "color": "#CECECE",
+                    "text": "Custom"
+                }
+            },
+            "__new": {
+                "pill": {
+                    "color": "#CECECE",
+                    "text": "Custom"
+                }
+            }
+        }
+    },
+    "nodes": [
+        {
+            "name": "RAMN",
+            "layer": "",
+            "category": "Boards",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "usb",
+                    "type": "usb"
+                },
+                {
+                    "name": "pod",
+                    "type": "pod",
+                    "array": [
+                        0,
+                        4
+                    ]
+                }
+            ],
+            "properties": [],
+            "subgraphId": "5f07089f-1cf7-4cdb-aae9-77552462ae37",
+            "urls": {
+                "designer_device": "ramn"
+            }
+        },
+        {
+            "name": "RAMN Device",
+            "layer": "",
+            "category": "Complex devices",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "usb",
+                    "type": "usb"
+                },
+                {
+                    "name": "can",
+                    "type": "can"
+                }
+            ],
+            "properties": [],
+            "subgraphId": "8839c3b6-e1ed-4e21-bbe3-d4a0d31ac2cf",
+            "urls": {
+                "designer_device": "ramn_device"
+            }
+        },
+        {
+            "name": "Control PC",
+            "layer": "",
+            "category": "Others",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "usb",
+                    "type": "usb"
+                }
+            ],
+            "properties": [],
+            "style": []
+        },
+        {
+            "name": "RAMN setup",
+            "layer": "",
+            "category": "Complex devices",
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "subgraphId": "fbb60ed2-19f0-4c2f-9244-69347dc221bc"
+        },
+        {
+            "name": "RAMN body",
+            "layer": "",
+            "category": "Boards",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "pod",
+                    "type": "pod"
+                }
+            ],
+            "properties": [],
+            "style": [],
+            "urls": {
+                "designer_device": "ramn_body"
+            },
+            "subgraphId": "d29afecb-0c0c-4880-9aa5-c80d21c9bfd1"
+        },
+        {
+            "name": "RAMN chassis",
+            "layer": "",
+            "category": "Boards",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "pod",
+                    "type": "pod"
+                }
+            ],
+            "properties": [],
+            "style": [],
+            "urls": {
+                "designer_device": "ramn_chassis"
+            },
+            "subgraphId": "ed36c455-75d9-4e1f-9de2-0af9ede49edb"
+        },
+        {
+            "name": "RAMN powertrain",
+            "layer": "",
+            "category": "Boards",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "pod",
+                    "type": "pod"
+                }
+            ],
+            "properties": [],
+            "style": [],
+            "urls": {
+                "designer_device": "ramn_powertrain"
+            },
+            "subgraphId": "bdcb5ec3-41a3-43a5-86fe-60e5d4d71969"
+        },
+        {
+            "name": "RAMN screens",
+            "layer": "",
+            "category": "Boards",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "pod",
+                    "type": "pod"
+                },
+                {
+                    "name": "spi",
+                    "type": "spi"
+                }
+            ],
+            "properties": [],
+            "style": [],
+            "urls": {
+                "designer_device": "ramn_screens"
+            },
+            "subgraphId": "765fc8d9-c16e-4156-aefa-1de412f7514f"
+        },
+        {
+            "name": "Adafruit 4313",
+            "layer": "",
+            "category": "Displays/TFT",
+            "description": "",
+            "interfaces": [
+                {
+                    "type": "spi",
+                    "name": "spi"
+                }
+            ],
+            "properties": [],
+            "icon": {
+                "hw-icon": "/imported/components/mech-adafruit-4313-h6mm/previews/isoT_thumbnail_64x64.webp"
+            },
+            "urls": {
+                "datasheet": "https://www.adafruit.com/product/4313?srsltid=AfmBOoqbVKDnS_voultvUW3usqjH7bwcCfHX-o_9llFzrf57i0B0PyFx",
+                "designer_components": "adafruit-4313",
+                "hwp": "components/adafruit-4313"
+            }
+        },
+        {
+            "name": "Microchip Technology ATA6561-GAQW-N",
+            "layer": "",
+            "category": "Interfacing/CAN/CAN Transceiver",
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "extends": [
+                "CAN Transceiver"
+            ],
+            "style": [],
+            "icon": {
+                "hw-icon": "/imported/components/soic-8-3-9x4-9x1-75mm-p1-27mm/previews/isoT_thumbnail_64x64.webp"
+            },
+            "urls": {
+                "datasheet": "https://eu.mouser.com/datasheet/3/282/1/20005991B.pdf",
+                "designer_components": "microchip-technology-ata6561-gaqw-n",
+                "hwp": "components/microchip-technology-ata6561-gaqw-n"
+            }
+        },
+        {
+            "name": "Phoenix Contact 1770966",
+            "layer": "",
+            "category": "Connectors/IO Header",
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "extends": [
+                "IO Header"
+            ],
+            "style": [],
+            "icon": {
+                "hw-icon": "/imported/components/terminalblock-wire2board-1x3-p2-5mm-1770966/previews/isoT_thumbnail_64x64.webp"
+            },
+            "urls": {
+                "datasheet": "https://www.mouser.com/datasheet/3/507/7/phoenix_contact_1770966_en.pdf",
+                "designer_components": "phoenix-contact-1770966",
+                "hwp": "components/phoenix-contact-1770966"
+            }
+        },
+        {
+            "name": "Samtec SSQ-113-03-G-D",
+            "layer": "",
+            "category": "Connectors/IO Header",
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "extends": [
+                "IO Header"
+            ],
+            "style": [],
+            "icon": {
+                "hw-icon": "/imported/components/pinsocket-2x13-p2-54mm-drill1-02mm-stacking/previews/isoT.webp"
+            },
+            "urls": {
+                "datasheet": "https://suddendocs.samtec.com/catalog_english/ssq_th.pdf",
+                "designer_components": "samtec-ssq-113-03-g-d",
+                "hwp": "components/samtec-ssq-113-03-g-d"
+            }
+        },
+        {
+            "name": "Würth Elektronik 61302621021",
+            "layer": "",
+            "category": "Connectors/IO Header",
+            "extends": [
+                "IO Header"
+            ],
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "icon": {
+                "hw-icon": "/imported/components/pinheader-2x13-p2-54mm-drill1mm-horizontal/previews/isoT.webp",
+                "designer_components": "wurth-elektronik-61302621021",
+                "hwp": "components/wurth-elektronik-61302621021"
+            }
+        },
+        {
+            "name": "Harwin M20-7821146",
+            "layer": "",
+            "category": "Connectors/IO Header",
+            "description": "",
+            "interfaces": [],
+            "properties": [],
+            "extends": [
+                "IO Header"
+            ],
+            "style": [],
+            "icon": {
+                "hw-icon": "/imported/components/pinsocket-1x11-p2-54mm-drill1mm/previews/isoT.webp",
+                "designer_components": "harwin-m20-7821146",
+                "hwp": "components/harwin-m20-7821146"
+            }
+        }
+    ],
+    "graphs": [
+        {
+            "id": "fbb60ed2-19f0-4c2f-9244-69347dc221bc",
+            "name": "RAMN setup",
+            "nodes": [
+                {
+                    "id": "2463e836-1432-4109-b039-85b6a7e6776f",
+                    "position": {
+                        "x": 1200,
+                        "y": 600
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "usb",
+                            "id": "e3424c32-9d72-4eb9-a4db-6e0ee943d747",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "can",
+                            "id": "5f528339-2778-4096-af5c-8489de4a7dd6",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN Device",
+                    "instanceName": "RAMN Device",
+                    "subgraph": "8839c3b6-e1ed-4e21-bbe3-d4a0d31ac2cf"
+                },
+                {
+                    "id": "7a437a01-0295-4468-9e9f-a41eb106cd62",
+                    "position": {
+                        "x": 700,
+                        "y": 600
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "usb",
+                            "id": "cdf0d5e7-5aac-4664-b2eb-47e9f5b23d50",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Control PC",
+                    "instanceName": "Control PC"
+                }
+            ],
+            "groups": [],
+            "connections": [
+                {
+                    "id": "31f0e4ac-7495-4673-b902-08165e371d76",
+                    "from": "cdf0d5e7-5aac-4664-b2eb-47e9f5b23d50",
+                    "to": "e3424c32-9d72-4eb9-a4db-6e0ee943d747"
+                }
+            ]
+        },
+        {
+            "id": "8839c3b6-e1ed-4e21-bbe3-d4a0d31ac2cf",
+            "name": "RAMN Device",
+            "nodes": [
+                {
+                    "id": "bc032618-379f-4ef7-a385-b155943e907b",
+                    "position": {
+                        "x": 800,
+                        "y": 100
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "usb",
+                            "id": "be9b5910-c987-4511-8bcc-89b01cee4a3a",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "pod[0]",
+                            "id": "5b09da0d-c1c4-41c0-b2bd-8d1556c47da5",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "pod[1]",
+                            "id": "9f08da48-3f96-40b9-a55f-adee12cf658b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "pod[2]",
+                            "id": "45572b62-250e-4fee-bdab-9b65ca557209",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "pod[3]",
+                            "id": "db25c05b-b43c-414a-a047-e620dddadccf",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN",
+                    "instanceName": "RAMN",
+                    "subgraph": "5f07089f-1cf7-4cdb-aae9-77552462ae37"
+                },
+                {
+                    "id": "b14a91e0-e09f-4d13-8f09-c57351b20326",
+                    "position": {
+                        "x": 1800,
+                        "y": -100
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "spi",
+                            "id": "a890add5-909c-4de5-a914-fbc3b7e19807",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Adafruit 4313",
+                    "instanceName": "Adafruit 4313"
+                },
+                {
+                    "id": "52b47de2-38da-4e3e-b81e-816d26612169",
+                    "position": {
+                        "x": 1400,
+                        "y": -100
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "pod",
+                            "id": "4bb9fc87-818a-4ef3-b578-1e06e205c25f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "spi",
+                            "id": "4ac4344c-0baf-4566-84e7-d5dfc3b55a38",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN screens",
+                    "instanceName": "RAMN screens",
+                    "subgraph": "765fc8d9-c16e-4156-aefa-1de412f7514f"
+                },
+                {
+                    "id": "b75fcda2-e3fe-428e-b51c-9d5f65ee5e83",
+                    "position": {
+                        "x": 1500,
+                        "y": 100
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "pod",
+                            "id": "d9c2fc29-43e0-42b0-9d8e-634751c0eb5b",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN body",
+                    "instanceName": "RAMN body",
+                    "subgraph": "d29afecb-0c0c-4880-9aa5-c80d21c9bfd1"
+                },
+                {
+                    "id": "68c5d0ea-f397-4017-b791-2eda900a053e",
+                    "position": {
+                        "x": 1500,
+                        "y": 300
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "pod",
+                            "id": "bb3aa27e-42df-4525-9220-c19815468f14",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN chassis",
+                    "instanceName": "RAMN chassis",
+                    "subgraph": "ed36c455-75d9-4e1f-9de2-0af9ede49edb"
+                },
+                {
+                    "id": "8283b021-e40a-4293-8d5f-2cf7f8d6999e",
+                    "position": {
+                        "x": 1400,
+                        "y": 499
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "pod",
+                            "id": "b6c326f4-6726-4afc-bc12-5d190f535623",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "RAMN powertrain",
+                    "instanceName": "RAMN powertrain",
+                    "subgraph": "bdcb5ec3-41a3-43a5-86fe-60e5d4d71969"
+                }
+            ],
+            "groups": [],
+            "connections": [
+                {
+                    "id": "6e1d5895-d4cd-456d-8f21-ebcb00b885ba",
+                    "from": "5b09da0d-c1c4-41c0-b2bd-8d1556c47da5",
+                    "to": "4bb9fc87-818a-4ef3-b578-1e06e205c25f"
+                },
+                {
+                    "id": "8794c56d-d6c8-4de7-9dbf-5fc99ccd0298",
+                    "from": "4ac4344c-0baf-4566-84e7-d5dfc3b55a38",
+                    "to": "a890add5-909c-4de5-a914-fbc3b7e19807"
+                },
+                {
+                    "id": "1fce70ed-8737-4487-add7-daa5c6e1dbb4",
+                    "from": "9f08da48-3f96-40b9-a55f-adee12cf658b",
+                    "to": "d9c2fc29-43e0-42b0-9d8e-634751c0eb5b"
+                },
+                {
+                    "id": "57bd8bcd-347d-4f65-b3b5-5bd589ba70b7",
+                    "from": "45572b62-250e-4fee-bdab-9b65ca557209",
+                    "to": "bb3aa27e-42df-4525-9220-c19815468f14"
+                },
+                {
+                    "id": "bae13d01-a0aa-42cd-b660-12919e53b5bc",
+                    "from": "db25c05b-b43c-414a-a047-e620dddadccf",
+                    "to": "b6c326f4-6726-4afc-bc12-5d190f535623"
+                }
+            ]
+        },
+        {
+            "id": "5f07089f-1cf7-4cdb-aae9-77552462ae37",
+            "name": "RAMN",
+            "nodes": [
+                {
+                    "id": "ba2437d1-c601-497a-b452-36cee074ce6f",
+                    "position": {
+                        "x": 600,
+                        "y": 300
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "adc1",
+                            "id": "55cb53d1-08fc-4425-977e-de5db816344c",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 21
+                        },
+                        {
+                            "name": "fdcan1",
+                            "id": "27b28ed6-99b9-4bdc-819a-78b160cd8d72",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "flash",
+                            "id": "28c57579-7d00-461d-9bf4-8fb829a21651",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpiob",
+                            "id": "55846bc5-2162-4978-9db8-d14f957158c9",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpiod",
+                            "id": "4852f6ab-be46-4685-846c-b4b54d087c97",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiof",
+                            "id": "6e29b01f-6416-4829-a626-5bcf5f824b68",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "gpioh",
+                            "id": "bd80f220-8498-44f6-95cf-62a08909ccef",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "i2c1",
+                            "id": "5139c1d7-07a0-469b-8a13-33a4aa831df3",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "octospi1",
+                            "id": "743a9e4d-f7ad-4b2c-abe0-f2efdb551ea8",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm-7",
+                            "id": "fc741dcb-cfea-4ca2-a99c-9cfa4d83258f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "qdec",
+                            "id": "7604eb53-55e3-4ab8-8945-440fb2759226",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "qdec-1",
+                            "id": "a3f59c06-7f3a-4bfe-9ad6-2242792be99a",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "qdec-2",
+                            "id": "dc1476ef-0c48-4ede-a169-1a971ff180da",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "qdec-3",
+                            "id": "954b77c1-0778-477f-b236-e325062f873d",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "qdec-4",
+                            "id": "2bfd0bd8-68ee-4f01-a5bb-4fbf1732cc86",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "qdec-5",
+                            "id": "dcc78abe-3e62-477a-8f3c-8ee28f37790f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "spi1",
+                            "id": "db69e2ba-f0ac-4b56-8e69-9d1019148df3",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi2",
+                            "id": "7ed18a5b-1663-43fc-a23a-93883f0c570c",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart5",
+                            "id": "1a7c8c29-51ae-4c35-abad-02a9f7234ab9",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart1",
+                            "id": "c02eca2c-2aaf-43d9-b6e6-cb87e7de90aa",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usart3",
+                            "id": "784017e9-b934-4d7d-8e22-614eed721fdb",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 20
+                        },
+                        {
+                            "name": "adc2",
+                            "id": "ad321d9e-f579-42a4-8407-8196d2a3d509",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "dac1",
+                            "id": "a79896d1-ca18-4e09-bcc4-4bd7bcac2262",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "gpioa",
+                            "id": "24fad670-4cb8-4bdf-a75c-c575dd1e42a1",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpioc",
+                            "id": "3f066f0d-3923-4176-955f-d182b4e3568d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpioe",
+                            "id": "68fc8267-f3bc-4785-adc5-6a984fd7775d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiog",
+                            "id": "7c768cc1-3961-4c3c-ae81-bc0c22b6892f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "i2c2",
+                            "id": "0c1bbe16-51d8-4b92-98a6-f236a3944151",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "lpuart1",
+                            "id": "2d2b9ec7-69c1-460f-a25a-ce4d5f2ec556",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "pinctrl",
+                            "id": "9d812b2e-1f4d-4fec-b678-764effefed6d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm",
+                            "id": "adeb93de-a3d4-4761-acf4-b56a3415240c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "pwm-1",
+                            "id": "bafcc05c-4b6d-4efe-955d-d82e31ada108",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "pwm-2",
+                            "id": "5276f8ec-7660-472a-abee-e3f6e442b379",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "pwm-3",
+                            "id": "45d22cf3-434b-4fb5-98b0-8d12adb25130",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "pwm-4",
+                            "id": "6867deb4-19c7-457e-b1db-b1e657a966fc",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "pwm-5",
+                            "id": "e6bd3675-7a5c-412c-9e60-71f5691af0dc",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "pwm-6",
+                            "id": "10d39324-af2e-49c0-92ec-4670bf845997",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "pwm-8",
+                            "id": "b5435bef-437c-424d-b9ca-3e4e329c4735",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi3",
+                            "id": "5ae31859-91dd-48ad-a497-a80816058d30",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart4",
+                            "id": "2bdfe0e4-b6d0-4544-8788-194ee3776c97",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart2",
+                            "id": "d1c9a622-0e26-4524-a5aa-000ae4438c12",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usb",
+                            "id": "35f724c5-bb19-41ac-8d0a-263138e2d2cc",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "STMicroelectronics STM32L552CCT6",
+                    "instanceName": "STM32L552CCT6"
+                },
+                {
+                    "id": "2f4ae740-4ce7-45d9-8812-d6e4681efb46",
+                    "position": {
+                        "x": 1900,
+                        "y": 300
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "adc1",
+                            "id": "24ae0dfc-f019-4fbe-8a40-d65edf8b8107",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "fdcan1",
+                            "id": "13e24575-a20f-4321-aa74-104a9ab2d86d",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "flash",
+                            "id": "39054691-ca8e-42bb-beb8-e9899224fc96",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpiob",
+                            "id": "20efdde1-b924-4ddb-b0ac-d2593e86697f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpiod",
+                            "id": "5fe6b975-3e9a-4d2a-9add-fa04e93b340d",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiof",
+                            "id": "dc8f5d02-b568-4c8d-893e-7a651fe9fe30",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "gpioh",
+                            "id": "441d94a6-aca1-425f-8ae5-ab229878a6d6",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "i2c1",
+                            "id": "22ed21ca-56cc-46b5-a873-c3c3e9fe219d",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "octospi1",
+                            "id": "d3293d5b-5ae6-4af5-bb83-2419d70d521b",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm-7",
+                            "id": "fd9a2e2b-6d14-4445-99b9-9dd030b971fa",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "qdec",
+                            "id": "a261472b-477f-4b10-9a0c-c66a82f8728f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "qdec-1",
+                            "id": "55a20d5a-f4b5-4847-9f34-f7e99960d7cc",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "qdec-2",
+                            "id": "1289213b-58fb-4f55-8768-db0d788b3da7",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "qdec-3",
+                            "id": "6942831a-82d8-40be-bfab-f13b4d801984",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "qdec-4",
+                            "id": "344009a8-7f42-4a4a-a440-47afcfab6e25",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "qdec-5",
+                            "id": "d2c6dc90-5228-4cf6-bf15-dc3360c0549c",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "spi1",
+                            "id": "1292ffa2-2969-4658-9508-fad446bd74b8",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi2",
+                            "id": "c46574e8-a531-43e3-a3b1-bbb9f5a2b597",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart5",
+                            "id": "dde889f1-fdba-460c-8c9f-1dd4b960f28f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart1",
+                            "id": "391ba05a-6b83-4e4e-9cd9-16c6c2e5c710",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usart3",
+                            "id": "fc18c9be-222b-4452-ab34-096faf9932b9",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 20
+                        },
+                        {
+                            "name": "adc2",
+                            "id": "0edcb72b-f83a-4bfe-84cf-0db58b2b8048",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "dac1",
+                            "id": "7f92e7cb-e112-4d27-a42c-ed566d9bfe4f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "gpioa",
+                            "id": "c04633f1-655e-4412-a655-5cd7364095e3",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpioc",
+                            "id": "500a9390-ccfd-4523-a151-b1209cd4b9e7",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpioe",
+                            "id": "eb7f70a7-a202-4214-a2c7-c371c17c20b7",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiog",
+                            "id": "307938ae-819c-48e9-b1d0-82ed2e2557e9",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "i2c2",
+                            "id": "06968c04-6aa0-47e3-9cbe-47ce39a492d8",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "lpuart1",
+                            "id": "00a90a75-9339-4977-a28a-e746e96e002c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "pinctrl",
+                            "id": "f16826e8-ee9a-4820-87f4-9ebe2fd14a49",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm",
+                            "id": "f0bbc746-9e5e-41d5-8e44-a48093f3d48b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "pwm-1",
+                            "id": "1a742ca4-cac4-4f73-9030-fa29107d6ade",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "pwm-2",
+                            "id": "af6fe4c6-6b51-4745-99e0-14e5b7e5af0c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "pwm-3",
+                            "id": "a1cfc172-69f8-4391-a516-25ca1929812d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "pwm-4",
+                            "id": "36cea769-da65-4ec1-8122-818c0f959dd3",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "pwm-5",
+                            "id": "c3ea3ba2-85f0-4383-a957-844684917aef",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "pwm-6",
+                            "id": "64250ba5-970d-43b8-9e27-7f1868ff5f7b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "pwm-8",
+                            "id": "c32632c1-0dc2-4027-8431-ae8b0c9b0d65",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi3",
+                            "id": "da212b02-acff-45af-a73e-20bf4d7e170e",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart4",
+                            "id": "fa4b284a-a7d1-4175-8415-738a928ae385",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart2",
+                            "id": "d848ad72-e0a1-4136-abfc-8d47da68df78",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usb",
+                            "id": "236b8f8d-20aa-48f5-9388-8f9b87ddb646",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 20
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "STMicroelectronics STM32L552CCT6",
+                    "instanceName": "STM32L552CCT6"
+                },
+                {
+                    "id": "ec445992-242e-434e-a58a-2aaa85e66668",
+                    "position": {
+                        "x": 600,
+                        "y": 1500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "adc1",
+                            "id": "c8edcfb4-4e47-4774-a842-1fee2a9a4172",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "fdcan1",
+                            "id": "bb247f2f-6fde-4276-9ea3-29885146734b",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "flash",
+                            "id": "468676a6-dd83-4458-b80e-7ece89c39bb1",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpiob",
+                            "id": "a4bcb4b6-1eac-4848-9dc6-761d7de1dc41",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpiod",
+                            "id": "1bfb18e2-5093-41fe-a7ae-0adea44c72f4",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiof",
+                            "id": "6f0e5310-428e-4da3-ab93-f6ee6d731421",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "gpioh",
+                            "id": "3b14e407-e14c-4d64-81c4-ba92cd00f346",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "i2c1",
+                            "id": "bac56c10-0819-493a-9c24-5f1c4d33f8a0",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "octospi1",
+                            "id": "497a3ae4-8222-4a19-a182-9a6776370de8",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm-7",
+                            "id": "2138fc85-c1b5-4f57-8063-b495b0e86e8d",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "qdec",
+                            "id": "f353fd9a-f6e8-44c5-89c7-d7cda8e9ee2a",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "qdec-1",
+                            "id": "05f0e9dc-5691-4b36-ab5c-d8ab84b25562",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "qdec-2",
+                            "id": "0578db40-48d3-4f31-9f9d-1560c12b9f55",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "qdec-3",
+                            "id": "4af49515-103c-4f25-86fc-1ff66746b41e",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "qdec-4",
+                            "id": "72d31658-2c4c-4448-a54c-ffdd9af8a3c0",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "qdec-5",
+                            "id": "0d00dc85-c99c-4918-a97f-bff76a4b96de",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "spi1",
+                            "id": "8293a50d-6d41-4cc1-ba0f-de67e92e96f5",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi2",
+                            "id": "ff302429-4c6d-404c-85da-134092eb65c1",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart5",
+                            "id": "b2f6b4ea-a159-40b7-a913-72389f7931ee",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart1",
+                            "id": "deb5680f-21fb-4e72-af56-1bf338e47ce3",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usart3",
+                            "id": "ed4f48cb-82bf-4b9b-9b42-74dadc2d3c43",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 20
+                        },
+                        {
+                            "name": "adc2",
+                            "id": "2de6ef47-727f-4210-ad20-52efd1412e56",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "dac1",
+                            "id": "9d28aaa4-76ba-414b-b888-f0ecb85d1fc5",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "gpioa",
+                            "id": "ac1e98ef-26c1-42e8-a27a-118be4be52f9",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpioc",
+                            "id": "b5793991-389a-4eaf-98e7-d2cbf79ea767",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpioe",
+                            "id": "a7a4c130-6303-406e-a30f-571e850c2322",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiog",
+                            "id": "3188d396-7811-4f5c-8907-e0fa6a6aacaa",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "i2c2",
+                            "id": "dd809315-25f0-4735-89e8-25efc862e6e6",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "lpuart1",
+                            "id": "3367b5dc-76a4-47b3-8b7e-e0854495b98e",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "pinctrl",
+                            "id": "57fb9bd2-9ab2-4350-8255-de5f8c699030",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm",
+                            "id": "6606505a-a908-408e-ad10-a1cea10106d4",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "pwm-1",
+                            "id": "571e3167-0149-47fa-94cd-7728164e465b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "pwm-2",
+                            "id": "2edd9a72-9e4e-4220-a158-e5f81e86b2a5",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "pwm-3",
+                            "id": "48c21097-8960-4e38-ad27-21d085904f24",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "pwm-4",
+                            "id": "5dfebb7e-2cbb-4c95-9352-0db3cc3da5ac",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "pwm-5",
+                            "id": "e650ef43-6512-4ebe-9075-c9f2a7c20a70",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "pwm-6",
+                            "id": "60201377-d1d9-40f1-99ce-23bf50f0f26f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "pwm-8",
+                            "id": "04e1652c-98f1-4888-bfdd-7b7899e11f7b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi3",
+                            "id": "ae97d98a-5dc0-41b7-94a4-8f7f091730d4",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart4",
+                            "id": "82f118ad-7a7c-479c-be96-61729ac0abb8",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart2",
+                            "id": "eaf60d55-5a7d-40b2-afd3-968eb7bb92f5",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usb",
+                            "id": "d3e36613-3a86-4fc7-8a9a-87c7db3fac05",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 20
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "STMicroelectronics STM32L552CCT6",
+                    "instanceName": "STM32L552CCT6"
+                },
+                {
+                    "id": "60e0ee88-d91e-487e-b350-aabf8905d495",
+                    "position": {
+                        "x": 1900,
+                        "y": 1500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "adc1",
+                            "id": "7b92ef31-0d73-4179-8282-7e8f2d75fb6f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "fdcan1",
+                            "id": "e66ad292-2713-48e0-aa1a-5159f8debb35",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "flash",
+                            "id": "fc302294-54da-4444-947c-0f9e05bf903a",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpiob",
+                            "id": "0c6833bf-dd52-4ba3-8d1a-f1d41cc75002",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpiod",
+                            "id": "fa7ace77-44f9-422b-b5a0-96525a0790dd",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiof",
+                            "id": "5ed76c6e-8f5a-4aa2-a2f6-d3e646615ec8",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "gpioh",
+                            "id": "645dd834-ceae-468b-a402-f50de44ae579",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "i2c1",
+                            "id": "bbdea176-b2ee-4fc9-aa54-12160b841596",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "octospi1",
+                            "id": "4dacc42d-0c17-4f64-9fd5-cda1f358ff53",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm-7",
+                            "id": "1990d4b6-e480-43c5-9308-7a9e556c3bf3",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "qdec",
+                            "id": "abf0af43-e4fc-4e14-a184-c84290ba0654",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "qdec-1",
+                            "id": "91c8655e-5e08-486a-91c3-6c5cca574614",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "qdec-2",
+                            "id": "de719719-74de-4503-ba36-7dd8dbc52763",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "qdec-3",
+                            "id": "3450ddf5-722c-4744-a2d4-e702e4da7a84",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "qdec-4",
+                            "id": "6bfed0ea-6392-4fc5-827a-28b4fbc60682",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "qdec-5",
+                            "id": "b8130a46-193e-45fc-a1b5-312e4a434729",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "spi1",
+                            "id": "c9df9993-4ffe-4f64-a80b-bbeb2ccd50c9",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi2",
+                            "id": "d61a5870-5e89-4473-8366-20a4819256fa",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart5",
+                            "id": "a9952461-90f5-4429-ba6e-9909ba883a4a",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart1",
+                            "id": "cff70afb-e11e-4147-855b-53a1a2dc99b5",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usart3",
+                            "id": "d92ff20b-d28b-4951-99dc-58cd9f39d98b",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 20
+                        },
+                        {
+                            "name": "adc2",
+                            "id": "65236884-3557-4b4e-86c6-1138e28cc2ae",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "dac1",
+                            "id": "84af2900-b190-42ac-8c6b-88f577516ed2",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "gpioa",
+                            "id": "02fa9817-e0bd-465a-aa5b-387146c32c65",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "gpioc",
+                            "id": "786e4965-780b-4246-bd96-6c566ceca660",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "gpioe",
+                            "id": "bece8f51-8128-46d2-a56d-56e2f831350a",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "gpiog",
+                            "id": "4d1eff45-606b-4a0c-9280-a90c5fe7f80f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 5
+                        },
+                        {
+                            "name": "i2c2",
+                            "id": "f7e91876-c2ab-449e-a829-b10838f092b1",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 6
+                        },
+                        {
+                            "name": "lpuart1",
+                            "id": "fe8cf0e8-22e3-45fd-aeed-bdcf9cbc789f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 7
+                        },
+                        {
+                            "name": "pinctrl",
+                            "id": "5661a2b5-7fc8-4e6b-a160-8a5e16545ad4",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 8
+                        },
+                        {
+                            "name": "pwm",
+                            "id": "93706b5a-5a59-4888-b117-5cef201189fe",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 9
+                        },
+                        {
+                            "name": "pwm-1",
+                            "id": "b585d3a8-8769-429d-94a7-33bedf0b99c2",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 10
+                        },
+                        {
+                            "name": "pwm-2",
+                            "id": "fa98c203-c1e5-4672-9b60-af109613af5c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 11
+                        },
+                        {
+                            "name": "pwm-3",
+                            "id": "bc89c728-437d-4ebe-bb68-7734dc664157",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 12
+                        },
+                        {
+                            "name": "pwm-4",
+                            "id": "959c34de-e420-4dae-983e-4464ea04366a",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 13
+                        },
+                        {
+                            "name": "pwm-5",
+                            "id": "e315ec40-6f78-40b7-b224-d7c4d2da5051",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 14
+                        },
+                        {
+                            "name": "pwm-6",
+                            "id": "50d5c4c2-71ab-4c24-8ba1-a4e66a79b431",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 15
+                        },
+                        {
+                            "name": "pwm-8",
+                            "id": "0e082c17-da43-415f-9b1e-c0e9db09bdd8",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 16
+                        },
+                        {
+                            "name": "spi3",
+                            "id": "20570ec4-89be-436c-9795-91888e461139",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 17
+                        },
+                        {
+                            "name": "uart4",
+                            "id": "0306c948-c19c-4a2f-8e62-eb3becc6080d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 18
+                        },
+                        {
+                            "name": "usart2",
+                            "id": "70d5eede-1802-4ae8-b608-c690260140ef",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 19
+                        },
+                        {
+                            "name": "usb",
+                            "id": "464c599f-de7e-4892-b8f5-bc705e5fe783",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 20
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "STMicroelectronics STM32L552CCT6",
+                    "instanceName": "STM32L552CCT6"
+                },
+                {
+                    "id": "6083b86d-f0f6-43cb-856f-c92bda8a02f7",
+                    "position": {
+                        "x": 1300,
+                        "y": 300
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "uCAN",
+                            "id": "5d8a252d-3eac-4b70-84a5-7fda42a7689e",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "can",
+                            "id": "a567212c-09d0-45e2-9c53-cb88b1979b00",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Microchip Technology ATA6561-GAQW-N",
+                    "instanceName": "Microchip Technology ATA6561-GAQW-N"
+                },
+                {
+                    "id": "7befd16b-7aab-4824-a72f-f770609283a5",
+                    "position": {
+                        "x": 2700,
+                        "y": 1100
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "2fd33e0c-fe81-4850-bfd1-da7ff9a4df13",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "67a29e4b-1c95-4c6d-9a21-6f756a560b4c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Phoenix Contact 1770966",
+                    "instanceName": "Phoenix Contact 1770966"
+                },
+                {
+                    "id": "6154745c-47d4-4082-95d8-56bf86a2fec7",
+                    "position": {
+                        "x": 1300,
+                        "y": 1500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "uCAN",
+                            "id": "f14d0f68-1743-4c3d-b818-656d74bb8985",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "can",
+                            "id": "c11fe51a-b035-42a4-9cb0-8b972409994d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Microchip Technology ATA6561-GAQW-N",
+                    "instanceName": "Microchip Technology ATA6561-GAQW-N"
+                },
+                {
+                    "id": "99c6cc5b-1dd4-4d2c-9591-c707292337ba",
+                    "position": {
+                        "x": -100,
+                        "y": 1500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "uCAN",
+                            "id": "ac99e813-75cf-4410-a043-7068ae464466",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "can",
+                            "id": "2cbc3097-3e6d-4159-8285-299eb2585a6e",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Microchip Technology ATA6561-GAQW-N",
+                    "instanceName": "Microchip Technology ATA6561-GAQW-N"
+                },
+                {
+                    "id": "035bcec3-b1b2-422c-b553-4f79295793f9",
+                    "position": {
+                        "x": -100,
+                        "y": 700
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "uCAN",
+                            "id": "dce10f46-2520-4257-b810-3900e77970b2",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "can",
+                            "id": "13b4a4bf-e430-4587-911a-4cee63cce9d6",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Microchip Technology ATA6561-GAQW-N",
+                    "instanceName": "Microchip Technology ATA6561-GAQW-N"
+                },
+                {
+                    "id": "6e21027a-7548-42af-9a4d-2c8457d42479",
+                    "position": {
+                        "x": -300,
+                        "y": 300
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "usb",
+                            "id": "c2411434-5ccd-4399-9f91-b97369cc3af9",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "usb micro",
+                            "id": "f9415b77-0ce0-4c04-a987-bcf6aeb83bd9",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Würth Elektronik 629105150521",
+                    "instanceName": "Würth Elektronik 629105150521"
+                }
+            ],
+            "groups": [],
+            "connections": [
+                {
+                    "id": "6ecf24ec-ab9e-4c5d-99f6-a361dc992095",
+                    "from": "c2411434-5ccd-4399-9f91-b97369cc3af9",
+                    "to": "35f724c5-bb19-41ac-8d0a-263138e2d2cc"
+                },
+                {
+                    "id": "ec9e461a-0743-45a7-96bc-9fa57ccdbc6b",
+                    "from": "13b4a4bf-e430-4587-911a-4cee63cce9d6",
+                    "to": "27b28ed6-99b9-4bdc-819a-78b160cd8d72"
+                },
+                {
+                    "id": "785ea4f0-dc20-40d2-84f4-9378bc08b0b0",
+                    "from": "2cbc3097-3e6d-4159-8285-299eb2585a6e",
+                    "to": "bb247f2f-6fde-4276-9ea3-29885146734b"
+                },
+                {
+                    "id": "7abde288-708a-4b46-b98a-462eafe74ac3",
+                    "from": "c11fe51a-b035-42a4-9cb0-8b972409994d",
+                    "to": "e66ad292-2713-48e0-aa1a-5159f8debb35"
+                },
+                {
+                    "id": "de0c26a2-4f84-4149-810d-5a77cec21da1",
+                    "from": "a567212c-09d0-45e2-9c53-cb88b1979b00",
+                    "to": "13e24575-a20f-4321-aa74-104a9ab2d86d"
+                },
+                {
+                    "id": "bcadd78d-1e9d-4b14-9e42-1a1a8335dba7",
+                    "from": "dce10f46-2520-4257-b810-3900e77970b2",
+                    "to": "2fd33e0c-fe81-4850-bfd1-da7ff9a4df13"
+                },
+                {
+                    "id": "6987f6e9-d1a9-43d8-9536-705e6f545db1",
+                    "from": "5d8a252d-3eac-4b70-84a5-7fda42a7689e",
+                    "to": "2fd33e0c-fe81-4850-bfd1-da7ff9a4df13"
+                },
+                {
+                    "id": "71168eec-803a-4de6-8c77-5b076f3b1c26",
+                    "from": "f14d0f68-1743-4c3d-b818-656d74bb8985",
+                    "to": "2fd33e0c-fe81-4850-bfd1-da7ff9a4df13"
+                },
+                {
+                    "id": "70705fab-5c57-46dc-a2e1-3c5e29351558",
+                    "from": "ac99e813-75cf-4410-a043-7068ae464466",
+                    "to": "2fd33e0c-fe81-4850-bfd1-da7ff9a4df13"
+                }
+            ]
+        },
+        {
+            "id": "765fc8d9-c16e-4156-aefa-1de412f7514f",
+            "name": "RAMN screens",
+            "nodes": [
+                {
+                    "id": "86712a75-7c60-45d5-992f-c15c13ea5fea",
+                    "position": {
+                        "x": 700,
+                        "y": 500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "adae7a8c-5fa7-4350-9743-e65e755a85cb",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "2dde00aa-447e-439c-801a-a787ef3ce201",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Würth Elektronik 61302621021",
+                    "instanceName": "Würth Elektronik 61302621021"
+                },
+                {
+                    "id": "0f5f17a7-3b03-44b0-bc9e-b31b6436b524",
+                    "position": {
+                        "x": 1200,
+                        "y": 500
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "cf08ff49-7982-4492-be97-f3d1b7d557af",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "9c6c1d0c-52ed-4fe8-ad5e-318d6a0d1f29",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Harwin M20-7821146",
+                    "instanceName": "Harwin M20-7821146"
+                }
+            ],
+            "groups": [],
+            "connections": [
+                {
+                    "id": "21db7c09-c91f-4f42-ae54-019fa0a6a145",
+                    "from": "adae7a8c-5fa7-4350-9743-e65e755a85cb",
+                    "to": "cf08ff49-7982-4492-be97-f3d1b7d557af"
+                }
+            ]
+        },
+        {
+            "id": "d29afecb-0c0c-4880-9aa5-c80d21c9bfd1",
+            "name": "RAMN body",
+            "nodes": [
+                {
+                    "id": "c4a20942-211e-42ab-9260-82e13f0102e9",
+                    "position": {
+                        "x": 1200,
+                        "y": 600
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "d42bfc78-2b85-46ab-b872-dcdebd3a0903",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "3bb2005b-ed3e-422e-9865-d335af46c9c8",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Samtec SSQ-113-03-G-D",
+                    "instanceName": "Samtec SSQ-113-03-G-D"
+                }
+            ],
+            "groups": [],
+            "connections": []
+        },
+        {
+            "id": "ed36c455-75d9-4e1f-9de2-0af9ede49edb",
+            "name": "RAMN chassis",
+            "nodes": [
+                {
+                    "id": "01e28832-434a-4ec4-86c2-16372cfc0a99",
+                    "position": {
+                        "x": 1200,
+                        "y": 800
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "b9df9da4-3395-464f-8fbd-7bbd0062169e",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "4560991a-cfb5-488e-afe9-f9d1b0ead229",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Samtec SSQ-113-03-G-D",
+                    "instanceName": "Samtec SSQ-113-03-G-D"
+                }
+            ],
+            "groups": [],
+            "connections": []
+        },
+        {
+            "id": "bdcb5ec3-41a3-43a5-86fe-60e5d4d71969",
+            "name": "RAMN powertrain",
+            "nodes": [
+                {
+                    "id": "dc5c5551-2372-4e6b-bdd9-2483eaad5ef1",
+                    "position": {
+                        "x": 1300,
+                        "y": 800
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "gpio",
+                            "id": "478bd4cc-66d4-4164-bc7d-cafb8943017c",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio header",
+                            "id": "5c4bae29-0289-4a3a-8324-175dbfd21b58",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Samtec SSQ-113-03-G-D",
+                    "instanceName": "Samtec SSQ-113-03-G-D"
+                }
+            ],
+            "groups": [],
+            "connections": []
+        }
+    ],
+    "entryGraph": "fbb60ed2-19f0-4c2f-9244-69347dc221bc"
+}
