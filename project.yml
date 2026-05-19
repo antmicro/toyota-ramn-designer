@@ -1,4 +1,4 @@
-company: Toyota InfoTech
+company: Toyota
 description: Renode support for STM32L552 for the [RAMN platform](https://github.com/ToyotaInfoTech/RAMN).
 spec: ./specification.json
 scenarios:
