@@ -3,16 +3,16 @@ description: Renode support for STM32L552 for the [RAMN platform](https://github
 spec: ./specification.json
 scenarios:
   RAMN setup:
-    assets:
+    payloads:
       - device: ramn_device -> ramn -> stmicroelectronics-stm32l552cct6--0
-        asset: ramn_firmware
+        software: ramn_firmware
       - device: ramn_device -> ramn -> stmicroelectronics-stm32l552cct6--1
-        asset: ramn_firmware
+        software: ramn_firmware
       - device: ramn_device -> ramn -> stmicroelectronics-stm32l552cct6--2
-        asset: ramn_firmware
+        software: ramn_firmware
       - device: ramn_device -> ramn -> stmicroelectronics-stm32l552cct6--3
-        asset: ramn_firmware
-      - asset: carla
+        software: ramn_firmware
+      - software: carla
         device: control_pc
 devices:
   RAMN:
@@ -26,27 +26,27 @@ devices:
       - microchip-technology-ata6561-gaqw-n
       - microchip-technology-ata6561-gaqw-n
       - microchip-technology-ata6561-gaqw-n
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/0_ramn
   RAMN screens:
     category: Boards
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/1_screens
   RAMN chassis:
     category: Boards
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/2_chassis
   RAMN powertrain:
     category: Boards
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/3_powertrain
   RAMN body:
     category: Boards
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/4_body
   RAMN debugger:
     category: Boards
-    assets:
+    sources:
       HW design (main): $GH/ToyotaInfoTech/RAMN:hardware/V1_revB/5_debugger
   RAMN Device:
     description: "RAMN (Resistant Automotive Miniature Network) is a miniature CAN/CAN-FD testbed of four Electronic Control Units (ECUs). The ECUs can be programmed to emulate the same network traffic as PASTA. RAMN is powered over USB and can be recognized as a standard CAN adapter. It can be connected in closed-loop with the autonomous driving simulator CARLA"
@@ -69,15 +69,15 @@ software:
   RAMN firmware:
     description: "STM32 Cube project containing firmware for RAMN (Resistant Automotive Miniature Network) Electronic Control Units (ECUs) "
     what: bare-metal-firmware
-    assets:
+    sources:
       GitHub: $GH/ToyotaInfoTech/RAMN@main:firmware
   CARLA:
     description: "Open-source simulator for autonomous driving research"
     what: linux-app
-    assets:
+    sources:
       GitHub: $GH/carla-simulator/carla@ue5-dev
   PASTA:
     description: "Portable Automotive Security Testbed with Adaptability - a platform based on non-proprietary technology, allowing researchers or engineers to freely construct in-vehicle networks"
     what: bare-metal-firmware
-    assets:
+    sources:
       GitHub: $GH/pasta-auto/PASTA1.0@master
