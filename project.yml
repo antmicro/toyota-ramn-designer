@@ -1,5 +1,6 @@
 company: Toyota
 description: Renode support for STM32L552 for the [RAMN platform](https://github.com/ToyotaInfoTech/RAMN).
+name: Toyota RAMN (GH version)
 spec: ./specification.json
 scenarios:
   RAMN setup:
