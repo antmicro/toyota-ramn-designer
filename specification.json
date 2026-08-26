@@ -68,7 +68,7 @@
             }
         },
         {
-            "name": "Control PC",
+            "name": "CARLA Control PC",
             "layer": "",
             "category": "Others",
             "description": "",
@@ -335,8 +335,8 @@
                     ],
                     "properties": [],
                     "enabledInterfaceGroups": [],
-                    "name": "Control PC",
-                    "instanceName": "Control PC"
+                    "name": "CARLA Control PC",
+                    "instanceName": "CARLA Control PC"
                 }
             ],
             "groups": [],
