@@ -3,7 +3,8 @@ description: Renode support for STM32L552 for the [RAMN platform](https://github
 name: Toyota RAMN (GH version)
 spec: ./specification.json
 scenarios:
-  RAMN setup:
+  RAMN Device with PC:
+    device: ramn_device_with_pc
     payloads:
       - device: ramn_device -> ramn -> stmicroelectronics-stm32l552cct6--0
         software: ramn_firmware
@@ -61,8 +62,8 @@ devices:
       - adafruit-4313
   CARLA Control PC:
     description: PC used to run the CARLA simulator
-  RAMN setup:
-    image: ./ramn-setup.webp
+  RAMN Device with PC:
+    category: Complex devices
     contains:
       - RAMN Device
       - CARLA Control PC
